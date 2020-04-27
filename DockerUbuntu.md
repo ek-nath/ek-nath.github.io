@@ -6,7 +6,7 @@
   ```
 2. Update the apt package index and install packages to allow apt to use a repository over HTTPS:
   ```
-  sudo apt update && sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+  sudo apt update && sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
   ```
 3. Add Docker’s official GPG key:
   ```
@@ -18,7 +18,7 @@
   ```
 5. Update the apt package index, and install the latest version of Docker Engine and containerd,
   ```
-  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  sudo apt-get install docker-ce docker-ce-cli containerd.io -y
   ```
 6. If you want to avoid typing sudo whenever you run the docker command, add your username to the docker group:
   ```
