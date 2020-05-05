@@ -46,5 +46,11 @@ Steps to be followed once the instance has been created. I am assuming that the 
    ```
 10. Install pyenv virtualenv: `git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv`
 11. Configure pyenv virtualenv to launch: `echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc`
-12. Install python: `pyenv install 3.8.2`
-13. Set that version as the global version: `pyenv global 3.8.2`
+12. Install prerequisites: 
+   ```
+   sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+   libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+   xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+   ```
+13. Install python: `pyenv install 3.8.2`
+14. Set that version as the global version: `pyenv global 3.8.2`
