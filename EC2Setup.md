@@ -1,6 +1,6 @@
 # EC2 machine setup
 
-Steps to be followed once the instance has been created. I am assuming that the login would be from WSL (with `~/.ssh` symlinked to `/c/Users/<user>/.ssh`)
+Steps to be followed once the instance has been created. I am assuming that the login would be from WSL (with `~/.ssh` symlinked to `/c/Users/<user>/.ssh` using `ln -s /mnt/c/Users/<user>/.ssh ~/.ssh` in wsl)
 
 1. Create an ssh alias in `~/.ssh/config`
    ```
